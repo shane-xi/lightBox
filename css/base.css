@@ -1,0 +1,85 @@
+img[data-role='lightbox']{
+    width: 100px;height: 100px;
+}
+.lightBox-mask{
+    position: fixed;
+    left:0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.lightBox-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: 400px;
+}
+.lightBox-view{
+    position: relative;
+    border: 5px solid #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    background: url("../images/loading.gif") no-repeat center;
+    background-color: #fff;
+    height: 230px;
+    box-sizing: border-box;
+}
+.lightBox-btn{
+    display: block;
+    position: absolute;
+    top:0;
+    cursor: pointer;
+    width: 40%;
+    height: 100%;
+}
+.lightBox-prev{
+    left: 0;
+}
+.lightBox-next{
+    right: 0;
+}
+.lightBox-prev-btn{
+    background: url("../images/prev.png") no-repeat left center;
+}
+.lightBox-next-btn{
+    background: url("../images/next.png") no-repeat right center;
+}
+.lightBox-image{
+    width:100%;
+    vertical-align: bottom;
+}
+.lightBox-caption{
+    height:100px;
+    position: relative;
+    background: rgba(10,10,10,0.3);
+    width:100%;
+}
+.lightBox-title{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:40px;
+    font-size: 16px;
+    line-height:40px;
+}
+.lightBox-desc{
+    position: absolute;
+    left: 0;
+    top:45px;
+    width: 300px;
+    padding: 5px 0;
+}
+.lightBox-close{
+    position: absolute;
+    top:0;
+    right:0;
+    background: url("../images/close.png");
+    width: 27px;
+    height:27px;
+    cursor: pointer;
+}
